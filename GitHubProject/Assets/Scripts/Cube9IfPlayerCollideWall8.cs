@@ -8,7 +8,7 @@ public class Cube9IfPlayerCollideWall8 : MonoBehaviour
     [SerializeField] private GameObject Cube9;
     void Start()
     {
-        Cube9.transform.position = new Vector3(11.6f, 22.44f, -3.95f);
+        Cube9.transform.position = new Vector3(11.6f, 12.44f, -3.95f);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -16,7 +16,6 @@ public class Cube9IfPlayerCollideWall8 : MonoBehaviour
     {
         if(other.gameObject.tag == "Player") 
         {
-            Debug.Log("It is working");
             Cube9.transform.position = new Vector3(11f, 6, -3);
         }
     }
